@@ -15,6 +15,9 @@
         },
         "cordova-plugin-console": {
             "PACKAGE_NAME": "com.prayogshala.dhwanigram"
+        },
+        "cordova-plugin-dialogs": {
+            "PACKAGE_NAME": "com.prayogshala.dhwanigram"
         }
     },
     "dependent_plugins": {}

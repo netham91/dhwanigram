@@ -47,16 +47,9 @@ body {
 
 /* Portrait layout (default) */
 .app {
-    background:url(../img/logo.png) no-repeat center top; /* 170px x 200px */
-    position:absolute;             /* position in the center of the screen */
-    left:50%;
-    top:50%;
-    height:50px;                   /* text area height */
-    width:225px;                   /* text area width */
-    text-align:center;
-    padding:180px 0px 0px 0px;     /* image height is 200px (bottom 20px are overlapped with text) */
-    margin:-115px 0px 0px -112px;  /* offset vertical: half of image height and text area height */
-                                   /* offset horizontal: half of text area width */
+   
+   height: 100vh;
+   width: 100vw;
 }
 
 /* Landscape layout (with min-width) */
@@ -78,38 +71,33 @@ h1 {
     text-align:center;
 }
 
-.event {
-    border-radius:4px;
-    -webkit-border-radius:4px;
-    color:#FFFFFF;
-    font-size:12px;
-    margin:0px 30px;
-    padding:2px 0px;
+
+
+.box-view{
+    height: 80vh;
+    width:90vw;
+    border: 1px solid;
 }
 
-.event.listening {
-    background-color:#333333;
-    display:block;
+.cell{
+    float: left;
+    height: 100%;
+    font-size: 5em;
+    color: red;
+    width: 33%;
+    border: 1px solid;
+
+
 }
 
-.event.received {
-    background-color:#4B946A;
-    display:none;
-}
 
-@keyframes fade {
-    from { opacity: 1.0; }
-    50% { opacity: 0.4; }
-    to { opacity: 1.0; }
-}
- 
-@-webkit-keyframes fade {
-    from { opacity: 1.0; }
-    50% { opacity: 0.4; }
-    to { opacity: 1.0; }
-}
- 
-.blink {
-    animation:fade 3000ms infinite;
-    -webkit-animation:fade 3000ms infinite;
+
+.display{
+
+  background-color: #fff;
+  background-repeat: no-repeat;
+  border-radius: 0.5em;
+  box-shadow: 0.5em 0.5em 1em rgba(0,0,0,0.125);
+  height: 30%;
+  width: auto;
 }
